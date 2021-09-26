@@ -1,0 +1,265 @@
+/* ==========DEFAULT CSS START============ */
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Cairo', sans-serif;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.wrapper{
+    width: 850px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+/* ==========DEFAULT CSS END============ */
+/* ==========HEADER CSS START============ */
+
+.header{
+    background-color: #2bcbba;
+    padding:10px 0;
+}
+header .header-logo a{
+    float: left;
+    width: 30%;
+}
+header .header-logo a img{
+    width: 120px;
+}
+header .header-menu{
+    float: left;
+    width: 70%;
+}
+header .header-menu ul{
+    text-align: right;
+}
+header .header-menu ul li{
+    display: inline-block;
+    position: relative;
+    margin-left: -4px;
+}
+header .header-menu ul li a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 4px 20px;
+	color: white;
+	font-size: 20px;
+	line-height: 40px;
+	border-right: 1px solid #fff;
+}
+header .header-menu ul li:hover > a{
+    background-color: #2d98da;
+}
+/* ====DROPDOWN PART==== */
+.header-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background-color:#45aaf2;
+    
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.header-menu ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.header-menu ul li ul li{
+    display: block;
+    margin-left: 0;
+}
+.header-menu ul li ul li:first-child a{
+    border-top: 1px solid #ddd;
+}
+.header-menu ul li ul li a{
+    display: block;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    border-right: none;
+}
+.header-menu ul li ul li ul{
+    top: 0;
+    left: -100%;
+}
+/* ==========HEADER CSS END============ */
+/* ==========BANNER CSS START============ */
+.banner{
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ULgiZN92eUS3EJeTDxbNfjGPbXTKzkNLRQ&usqp=CAU) no-repeat center center ;
+    background-size:cover;
+    padding: 200px 0px;
+    text-align: center;
+}
+.banner-content{
+    text-align: center;
+}
+.banner-content h1 {
+    background: #25222275;
+	color: white;
+	display: inline-block;
+	padding: 10px 20px;
+    font-size: 30px;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+.banner-content h2 {
+	background: rgba(0, 0, 0, 0.25);
+	color: white;
+	max-width: 333px;
+	margin: auto;
+	padding: 10px 45px;
+	border-radius: 6px;
+	font-size: 35px;
+}
+/* ==========BANNER CSS END============ */
+/* ==========ABOUT CSS START============ */
+.about{
+    text-align: center;
+    margin: 50px 0px;
+}
+.about h1{
+    font-size: 27px;
+    padding:10px 50px;
+    position: relative;
+    display: inline-block;
+    background-color:rgba(60, 130, 97, 0.798);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: .5s;
+    overflow: hidden;
+    z-index: 1;
+}
+.about h1:hover{
+    color: white;
+    cursor: pointer;
+}
+.about h1::after{
+    content: "";
+    height: 100%;
+    width: 0;
+    background-color: #fd9644;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    transition: .5s;
+    z-index: -1;
+}
+.about h1:hover::after{
+    width: 100%;
+}
+.about p {
+	max-width: 700px;
+	margin: auto;
+	font-family: sans-serif;
+	line-height: 25px;
+    font-weight:500;
+    margin-bottom: 50px;
+    color: #606060;
+}
+/* ====BOX STYLE START===== */
+.about-box{
+    float: left;
+    width: 31%;
+    box-shadow: 0px 0px 3px 3px rgba(77, 65, 65, 0.375);
+    box-sizing: border-box;
+    margin: 0px 25px 30px 0px !important;
+    overflow: hidden;
+    transition: .4s;
+    padding: 20px;
+}
+.about-box.three,.about-box.last{
+    margin-right: 0 !important;
+}
+.about-box:hover{
+    transform:translate(0px,10px)
+}
+.about-box i{
+    font-size: 40px;
+    background-color: red;
+    padding:10px 13px;
+    border-radius: 20px 0px;
+    margin-top: 10px;
+    color: white;
+}
+.about-box h2{
+    margin: 15px 0px;
+}
+.about-box p{
+    margin: 15px 0px;
+}
+/* ==========ABOUT CSS END============ */
+/* ==========SERVICE CSS START============ */
+.service-item-left{
+    float: left;
+    width: 70%;
+}
+.service-content{
+    margin-bottom: 20px;
+}
+.service-content img{
+    float: left;
+    width: 100px;
+    margin-right: 15px;
+}
+.service-content p{
+}
+.left-content p{}
+
+
+
+
+
+
+.service-item-right{
+    float:right;
+    width: 25%;
+}
+.service-item-right h2{
+    border-bottom: 1px solid #ddd;
+    font-size: 35px;
+}
+.service-item-right ul{
+    margin-top: 20px;
+}
+.service-item-right ul li{
+    list-style: none;
+    padding: 10px 5px;
+    background-color: #efeaea;
+    border: 1px solid #000;
+    font-size: 17px;
+    margin: 10px 0px;
+    border-radius: 6px;
+}
+/* ==========SERVICE CSS END============ */
+/* ==========FOOTER CSS START============ */
+.footer{
+    background-color:#3c6382;
+    padding: 10px 0px;
+    color: white;
+}
+.left-text{
+    float: left;
+    width: 70%;
+}
+.left-text h2{
+    margin-top: 10px;
+}
+.right-icon{
+    float: right;
+    width: 30%;
+}
+.right-icon a {
+	color: #fff;
+	font-size: 30px;
+	padding: 0 10px;
+}
+/* ==========FOOTER CSS END============ */

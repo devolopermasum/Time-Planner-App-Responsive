@@ -1,0 +1,133 @@
+@media all and (max-width:1400px) {
+    .wrapper{
+        width: 1120px;
+        margin: auto;
+    }
+}
+@media all and (max-width:1120px) {
+    .wrapper {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .service-item-right ul li{
+        font-size: 15px;
+    }
+    .service-content p{
+        font-size: 14px;
+    }
+
+    .footer .left-text h2{
+        font-size: 20px;
+    }
+    .footer .right-icon{
+        font-size: 30px;
+    }
+    .footer .right-icon a{
+        font-size: 20px;
+    }
+}
+@media all and (max-width:798px) {
+    header .header-logo a {
+        width: 100%;
+        text-align: center;
+    }
+    header .header-menu{
+        width: 100%;
+        text-align: center;
+    }
+    header .header-menu ul {
+        text-align: center;
+    }
+    header .header-menu ul li a{
+        border: none;
+        padding: 4px 8px;
+    }
+    .header-menu ul li ul{
+        width: 170px;
+    }
+    ..header-menu ul li ul li a{
+        font-size: 10px;
+    }
+
+    .banner{
+        padding:100px 0;
+    }
+    .banner-content h1{
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+    .banner-content h2{
+        font-size: 25px;
+        padding: 5px 10px;
+    }
+
+    .about h1 {
+        font-size: 20px;
+        padding: 5px 40px;
+    }
+    .about-box{
+        width: 100%;
+    }
+    .about-box p{
+        max-width: 450px;
+        margin: auto;
+    }
+    .service-item-left{
+        width: 100%;
+    }
+    .service-item-right{
+        width: 100%;
+    }
+    .service-content p {
+        line-height: 1.5rem;
+    }
+    .left-text{
+        width: 100%;
+    }
+    .left-text h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer .right-icon{
+        width: 100%;
+        text-align: center;
+    }
+    .right-icon a{
+        font-size: 30px;
+    }
+
+}
+
+@media all and (max-width:380px) {
+    header .header-menu ul li a{
+        padding:4px 7px;
+        font-size: 15px;
+    }
+    .banner{
+        padding:80px 0;
+    }
+    .banner-content h1{
+        font-size: 15px;
+        letter-spacing: 0.1rem;
+    }
+    .banner-content h2{
+        font-size: 20px;
+    }
+
+    .footer .left-text{
+        width: 100%;
+    }
+    .footer .left-text h2{
+        font-size: 18px;
+    }
+    .footer .right-icon{
+        width: 100%;
+        text-align: center;
+    }
+    .right-icon i {
+        padding: 0 5px;
+    }
+}
